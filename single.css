@@ -346,3 +346,135 @@ button:hover{
     text-align: center;
     cursor: pointer;
 }
+/* Base styles (for desktop) */
+
+/* Media query for tablets and smaller devices */
+@media screen and (max-width: 768px) {
+    /* Adjust the profile image size */
+    .profile_image {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Stack the profile name and contact info vertically */
+    .profile_name {
+        float: none;
+        padding-left: 0;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .profile_name .contact_info {
+        justify-content: center;
+    }
+
+    /* Center the navigation links and reduce padding */
+    .topdiv {
+        float: none;
+        text-align: center;
+        padding-right: 0;
+        padding-top: 10px;
+    }
+    .topmenu {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    /* Adjust the skill cards for smaller screens */
+    .skill {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    /* Make recommendations stack vertically */
+    .all_recommendations {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .recommendations {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    /* Adjust the projects section layout */
+    .projects-container {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .project-card {
+        margin: 0 10px 20px;
+        padding-bottom: 10px;
+    }
+
+    /* Adjust form and buttons */
+    fieldset {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .iconbutton {
+        right: 5%;
+        bottom: 5%;
+    }
+
+    .popup {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .popup button {
+        width: 70%;
+        margin: 20px auto;
+    }
+}
+
+/* Media query for smaller phones */
+@media screen and (max-width: 480px) {
+    #about-me h1 {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    #about-me p {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .skill img {
+        height: 25px;
+    }
+
+    .skill h6 {
+        font-size: 16px;
+    }
+
+    .skill p {
+        font-size: 14px;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .project-card li {
+        font-size: 16px;
+    }
+
+    input, textarea {
+        width: 95%;
+    }
+
+    button {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
